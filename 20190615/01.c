@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+/**
+ * @description 사칙연산 > 설탕배달
+ */
 int main(void) {
     int a;
     scanf("%d", &a);

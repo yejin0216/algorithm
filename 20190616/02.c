@@ -1,0 +1,26 @@
+//
+// Created by yejin kim on 2019-06-16.
+//
+#include <stdio.h>
+
+/**
+ * @description 사칙연산 > 별찍기-4
+ */
+int main(void) {
+
+    int input;
+    scanf("%d", &input);
+
+    for ( int i=input; i>=1; i-- ) {
+        for ( int j=input; j>=1; j-- ) {
+            if ( j <= i ) {
+                printf("*");
+            } else {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
