@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void) {
 
-//    char *array;
+//    char *array = malloc(sizeof(int)*2);
     char array[2];
     gets(array);
 
