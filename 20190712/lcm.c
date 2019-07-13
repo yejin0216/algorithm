@@ -1,14 +1,19 @@
 #include <stdio.h>
 
-int lcm(int m, int n) {
-    int max = m > n ? m : n;
-    while ( 1 ) {
-        if ( max%m == 0 && max%n == 0 ) {
-            break;
-        }
-        max++;
+//최대 공약수
+int gcd(int a, int b) {
+    int c;
+    while ( b != 0 ) {
+        c = a%b; //나머지
+        a = b;
+        b = c;
     }
-    return max;
+    return a;
+}
+
+//최소 공배수
+int lcm(int a, int b) {
+    return a*b/gcd(a, b);
 }
 
 int main(void) {
