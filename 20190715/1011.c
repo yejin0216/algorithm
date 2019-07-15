@@ -18,9 +18,9 @@ int main(void) {
             if ( gap >= min && gap <= max) {
                 //printf("%d\n", n);
                 if ( gap <= pow ) {
-                    printf("%d\n", n+(n-1));
+                    printf("%lld\n", n+(n-1));
                 } else {
-                    printf("%d\n", 2*n);
+                    printf("%lld\n", 2*n);
                 }
 
                 break;
