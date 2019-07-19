@@ -8,6 +8,7 @@ int main(void) {
     char input[100];
     gets(input);
 
+
     for ( int j=97; j<123; j++ ) {
         int check = 0;
         for ( int i=0; i<100; i++ ) {

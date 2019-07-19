@@ -9,6 +9,7 @@ int main(void) {
     scanf("%d", &count);
     getchar();
 
+
     int array[count];
     for ( int i=0; i<count; i++ ) {
 

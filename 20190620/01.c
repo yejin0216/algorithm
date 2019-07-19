@@ -6,6 +6,7 @@ int main(void) {
     char array[1000000];
     gets(array);
 
+
     //가운데만, 앞에만, 뒤에만, 앞enl
     int temp = 0;
     for ( int i=0; i<1000000; i++ ) {
