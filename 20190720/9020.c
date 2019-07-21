@@ -47,6 +47,8 @@ int main(void) {
             }
         }
 
+        free(notSosu);
+
         printf("%d %d\n", a, b);
 
         loop++;
