@@ -11,27 +11,33 @@ int main(void) {
 
     //자리수와 각각 숫자 구하기
     //ex.216
-    int jarisu = 0;
+    int sum = n;
     int __n = n;
-    for ( ;1; ) {
-        int temp = __n/10;
-        if ( temp > 0 ) {
-            jarisu++;
-            __n = temp;
+    int flag = 0;
+    int m = 0;
+    for ( int i=n-54; i<n; i++ ) {
+        int temp = i;
+        int rest_sum = 0;
+        while ( temp > 0 ) {
+            int rest = temp%10;
+            rest_sum += rest;
+            temp /= 10;
         }
-        if ( temp == 0 ) {
-            jarisu++;
+        sum = i+rest_sum;
+//        printf("%d\n", rest_sum);
+//        printf("%d\n", sum);
+
+        if ( n == sum ) {
+            flag = 1;
+            m = i;
             break;
         }
     }
-    printf("%d\n", jarisu);
 
-    __n = n; //초기화
-    int __first = __n/pow(10, (jarisu-1));
-    printf("%d\n", __first);
-
-    for ( int i=1; i<=jarisu; i++ ) {
-
+    if ( flag ) {
+        printf("%d\n", m);
+    } else {
+        printf("%d\n", 0);
     }
 
     return 0;
