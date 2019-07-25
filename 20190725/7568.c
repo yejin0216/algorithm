@@ -5,12 +5,6 @@
 #include <stdlib.h>
 
 int main(void) {
-//    5
-//    55 185
-//    58 183
-//    88 186
-//    60 175
-//    46 155
     int count;
     scanf("%d", &count);
 
@@ -33,9 +27,10 @@ int main(void) {
             }
         }
 
-        //답 2 2 1 2 5
-        //   1 1 0 1 4
         printf("%d ", check+1);
     }
+
+    free(x);
+    free(y);
 }
 
