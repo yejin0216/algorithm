@@ -29,7 +29,6 @@ int main(void) {
 
         // 평범 사례
         int min = 999999;
-        int value = 0;
         for ( int i=0; i<999999; i++ ) {
             string channel = to_string(i); //숫자
             int check = 0;
@@ -42,7 +41,6 @@ int main(void) {
             }
 
             if ( check == 0 ) {
-//                cout << i << endl;
                 //자리수 구하기
                 int _value = i;
                 int jarisu = 0;
@@ -60,21 +58,17 @@ int main(void) {
                     break;
                 } else {
                     min = temp;
-                    value = i;
-//                    cout << jarisu << endl;
-//                    cout << min << endl;
-//                    cout << value << endl;
                 }
             }
         }
-
-//        min = abs(value-n);
 
         if ( comp > min ) {
             cout << min << endl;
         } else {
             cout << comp << endl;
         }
+
+        delete[] button;
 
     }
 
