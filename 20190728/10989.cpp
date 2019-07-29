@@ -1,31 +1,31 @@
 #include <stdio.h>
 
-int main(void) {
+      int main(void) {
 
-    int n;
+        int n;
 //    cin >> n;
-    scanf("%d", &n);
+        scanf("%d", &n);
 
-    int a[10001] = {0,}; //합이 들어갈 배열
+        int a[10001] = {0,}; //합이 들어갈 배열
 
-    //첫째 줄에 수의 개수 N(1 ≤ N ≤ 10,000,000)이 주어진다. 둘째 줄부터 N개의 줄에는 숫자가 주어진다. 이 수는 10,000보다 작거나 같은 자연수이다.
-    getchar(); //버퍼 하나 비우고
+        //첫째 줄에 수의 개수 N(1 ≤ N ≤ 10,000,000)이 주어진다. 둘째 줄부터 N개의 줄에는 숫자가 주어진다. 이 수는 10,000보다 작거나 같은 자연수이다.
+        getchar(); //버퍼 하나 비우고
 
-    //숫자 입력받기
-    for ( int i=0; i<n; i++ ) {
-        int temp;
-        scanf("%d", &temp);
-        a[temp] = a[temp]+1;
-    }
+        //숫자 입력받기
+        for ( int i=0; i<n; i++ ) {
+            int temp;
+            scanf("%d", &temp);
+            a[temp] = a[temp]+1;
+        }
 
-    for ( int i=0; i<10001; i++ ) {
-        if ( a[i] > 0 ) {
+        for ( int i=0; i<10001; i++ ) {
+            if ( a[i] > 0 ) {
 //            printf("%d\n", a[i]);
-            for ( int j=0; j<a[i]; j++ ) {
-                printf("%d\n", i);
+                for ( int j=0; j<a[i]; j++ ) {
+                    printf("%d\n", i);
+                }
             }
         }
-    }
 
 
 
