@@ -42,7 +42,7 @@ int main(void) {
     quickSort(array, 0, n-1);
 
     for ( int i=0; i<n; i++ ) {
-        printf("%d", array[i]);
+        printf("%d\n", array[i]);
     }
 
     return 0;
